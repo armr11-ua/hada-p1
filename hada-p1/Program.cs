@@ -10,6 +10,33 @@ namespace hada_p1
     {
         static void Main(string[] args)
         {
+            string opcion;
+            string opcion2;
+            double time;
+            double conversion;
+
+            do
+            {
+                Console.WriteLine("Indica la unidad segundos/minutos(s/m): ");
+                opcion = Console.ReadLine();
+                opcion = opcion.ToLower();
+                Console.WriteLine("Indica el tiempo: ");
+                time = double.Parse(Console.ReadLine());
+                if (opcion == "s")
+                {
+                    conversion = HadaP1.Seconds2Minutes(time);
+                }
+                else if (opcion == "m")
+                {
+                    conversion = HadaP1.Minutes2Seconds(time);
+
+                }
+
+                Console.WriteLine("¿Quiere hacer mas conversiones?(s/n): ");
+                opcion2 = Console.ReadLine();
+
+            } while (opcion2 != "n");
+
         }
     }
 }
