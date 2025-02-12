@@ -9,7 +9,7 @@ namespace hada_p1
     internal class HadaP1
     {   
         /// <summary>
-        /// Conversor de segundos a minutos
+        /// Conversor de segundos a minutos.
         /// </summary>
         /// <param name="s"></param>
         /// <returns></returns>
