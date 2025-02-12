@@ -17,7 +17,7 @@ namespace hada_p1
 
             do
             {
-                Console.WriteLine("Indica la unidad segundos/minutos(s/m): ");
+                Console.WriteLine("Indica la unidad segundos/minutos/horas(s/m/h): ");
                 opcion = Console.ReadLine();
                 opcion = opcion.ToLower();
                 Console.WriteLine("Indica el tiempo: ");
@@ -29,6 +29,11 @@ namespace hada_p1
                 else if (opcion == "m")
                 {
                     conversion = HadaP1.Minutes2Seconds(time);
+
+                }
+                else if (opcion == "h")
+                {
+                    conversion = HadaP1.Hours2Minutes(time);
 
                 }
 
