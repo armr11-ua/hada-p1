@@ -20,7 +20,7 @@ namespace hada_p1
         }
 
         /// <summary>
-        /// Conversor de minutos a segundos
+        /// Conversor de minutos a segundos.
         /// </summary>
         /// <param name="m"></param>
         /// <returns></returns>
